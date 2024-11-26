@@ -6,8 +6,7 @@ import { formatPrice } from "@/lib/formatPrice";
 import { cn } from "@/lib/utils";
 import { ProductType } from "@/types/product";
 import { X } from "lucide-react";
-import { useRouter } from "next/navigation";
-import { format } from "path";
+
 
 interface CartItemPros {
   product: ProductType;
@@ -15,7 +14,6 @@ interface CartItemPros {
 
 const CartItem = (props: CartItemPros) => {
   const { product } = props;
-  const router = useRouter();
   const { removeItem } = useCart();
 
   return (

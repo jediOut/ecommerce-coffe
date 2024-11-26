@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useGetFeaturedProducts } from "@/api/useGetFeaturedProducts";
 import { ResponseType } from "@/types/response";
 import {

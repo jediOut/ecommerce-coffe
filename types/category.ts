@@ -1,4 +1,3 @@
-import { url } from "inspector"
 
 export type CategoryType ={
     id:number
