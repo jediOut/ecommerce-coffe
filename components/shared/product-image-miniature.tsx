@@ -13,7 +13,7 @@ const ProductImageMiniature = (props: ProductImageMiniatureProps) => {
       className="cursor-pointer"
     >
       <img
-        src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${url}`}
+        src={`${url}`}
         alt="Product Image"
         className="w-24 h-24 overflow-hidden rounded-md sm:w-auto sm:h-32"
       />
