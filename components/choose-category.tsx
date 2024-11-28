@@ -5,6 +5,7 @@ import { ResponseType } from "@/types/response";
 import Link from "next/link";
 const ChooseCategory = () => {
   const { result, loading }: ResponseType = useGetCategories();
+  console.log(result);
   return (
     <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
       <h3 className="px-6 pb-4 text-3xl sm:pb-8">
@@ -20,7 +21,7 @@ const ChooseCategory = () => {
               className="relative max-w-xs mx-auto overflow-hidden bg-no-repeat bg-cover rounded-lg"
             >
               <img
-                src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${category.mainImage.url}`}
+                src={`${category.mainImage.url}`}
                 alt={category.categoryName}
                 className="max-w-[270px] transition duration-300 ease-in-out rounded-lg hover:scale-110"/>
 
